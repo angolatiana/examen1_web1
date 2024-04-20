@@ -41,3 +41,60 @@
     padding: 0 6rem;
     font-size: 1.9rem;
 }
+
+nav{
+    position: sticky;
+    top: 0;
+}
+
+.milieu{
+    display: flex;
+    flex-direction: column;    
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(photo/premierephoto.jpg);
+    background-size: cover; 
+    padding-bottom: 15rem;
+}
+
+.first_part{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+    margin-top: 10vh;
+}
+.titre_gauche{
+    font-size: 1.5rem;
+    margin-right: 70%;
+}
+.texte{
+    padding: 2vh;
+    font-size: 1.2rem;
+    padding-right: 0;
+    margin-left: 0.5vw;
+    margin-bottom: 13.6vh;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2vw;
+}
+.billets{
+    margin-left: 5vw;
+    width: 12vw;
+    font-size: 1.2rem;
+    background-color: var(--text_color1);
+    border-color: var(--red_indice);
+}
+.billets a{
+    text-decoration: none;
+}
+.abonner{
+    height: 10vh;
+    width: 12vw;
+    font-size: 1.2rem;
+    background-color: var(--text_color1);
+    border-color: var(--red_indice);
+}
+header{
+   
+}
