@@ -2,3 +2,42 @@
     padding: 0;
     margin: 0;
 }
+
+:root{
+    --red_indice:rgb(245, 29, 29);
+    --text_color1: white;
+    --text_color2: black;
+    --back:rgb(70, 68, 68);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 3vh 0;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    color:var(--text_color1);
+    font-size: 1.5rem;
+}
+
+.indice{
+    color:var(--red_indice);
+}
+
+.choix{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vh 0;
+}
+.choix a{
+    text-decoration: none;
+    color:var(--text_color1);
+    padding: 0 6rem;
+    font-size: 1.9rem;
+}
