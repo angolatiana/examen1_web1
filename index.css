@@ -44,39 +44,40 @@
 
 nav{
     position: sticky;
-    top: 0;
+    top:0;
 }
 
-.milieu{
-    display: flex;
-    flex-direction: column;    
+.milieu{   
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(photo/premierephoto.jpg);
     background-size: cover; 
-    padding-bottom: 15rem;
+    padding-bottom: 9.75rem;
 }
 
 .first_part{
     display: flex;
     flex-direction: column;
     margin-left: 3vw;
-    margin-top: 10vh;
+    margin-top: 0;
+    padding-top: 12vh;
 }
 .titre_gauche{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-right: 70%;
+    color: var(--text_color1);
 }
 .texte{
-    padding: 2vh;
+    margin-left: 2vw;
+    margin-top: 5rem;
     font-size: 1.2rem;
-    padding-right: 0;
-    margin-left: 0.5vw;
-    margin-bottom: 13.6vh;
+    margin-right: 75%;
+    color: var(--text_color1);
 }
 
 .buttons{
     display: flex;
     flex-direction: row;
-    margin-left: 2vw;
+    margin-left: 70%;
+    margin-top: -4rem;
 }
 .billets{
     margin-left: 5vw;
@@ -94,7 +95,4 @@ nav{
     font-size: 1.2rem;
     background-color: var(--text_color1);
     border-color: var(--red_indice);
-}
-header{
-   
 }
