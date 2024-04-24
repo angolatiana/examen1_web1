@@ -96,3 +96,34 @@ nav{
     background-color: var(--text_color1);
     border-color: var(--red_indice);
 }
+
+main{
+    background-color: var(--back);
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes_L1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25vh;
+    justify-content: space-around;
+}
+
+.course1,.course2,.course3,.course4,.course5{
+    background-color: var(--text_color1);
+    border-radius: 5%;
+    height: 9rem;
+    width: 15rem;
+    text-align: center;
+}
+.boxes_L2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+}
