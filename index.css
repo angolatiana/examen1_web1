@@ -118,8 +118,8 @@ main{
 .course1,.course2,.course3,.course4,.course5{
     background-color: var(--text_color1);
     border-radius: 5%;
-    height: 9rem;
-    width: 15rem;
+    height: 11rem;
+    width: 16rem;
     text-align: center;
 }
 .boxes_L2{
