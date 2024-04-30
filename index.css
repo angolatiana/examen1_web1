@@ -4,7 +4,7 @@
 }
 
 :root{
-    --red_indice:rgb(245, 29, 29);
+    --red_indice:rgb(239, 58, 58);
     --text_color1: white;
     --text_color2: black;
     --back:rgb(26, 25, 25);
@@ -110,22 +110,50 @@ main{
 
 .boxes_L1{
     display: flex;
-    flex-direction: row;
-    margin-top: 25vh;
+    flex-direction:unset;
+    margin-top: 15vh;
     justify-content: space-around;
 }
 
 .course1,.course2,.course3,.course4,.course5{
-    background-color: var(--text_color1);
-    border-radius: 5%;
-    height: 11rem;
+    background-color:var(--text_color2);
+    height: 10rem;
     width: 16rem;
     text-align: center;
+    border-radius: 1rem;
 }
 .boxes_L2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 15vh;
-    margin-bottom: 20vh;
+    margin-top: 20vh;
+    margin-bottom: 8vh;
+}
+
+.boxes h1{
+    background-color:rgb(245, 243, 243);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 0.5rem 0;
+}
+
+ .boxes h2{
+    color: var(--red_indice);
+    padding-top: 1.5rem;
+}
+
+.boxes hr{
+    height: 0.2vh;
+    margin: 0 2vh;
+    border: none;
+    background-color: var(--text_color1);
+}
+
+.boxes h3{
+    padding: 0.5rem 0;
+    color:var(--text_color1);
+}
+
+.boxes p{
+    color:var(--red_indice);
 }
