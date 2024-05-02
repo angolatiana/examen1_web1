@@ -247,3 +247,135 @@ main{
     width: 50%;
     height: auto;
 }
+
+
+
+
+
+
+
+
+#billets{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    padding-bottom: 5vh;
+}
+
+.prix{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    justify-content: space-around;
+    background-color: black;
+    border: 0.5px solid var(--red_indice);
+}
+
+.simple,.VIP{
+    font-size: 1.2rem;
+    width: 10rem;
+    height: 6rem;
+}
+.simple{
+    animation-name: prixSimple;
+    animation-duration: 2s;
+}
+@keyframes prixSimple{
+    0%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.VIP{
+    animation-name: prixVIP;
+    animation-duration: 2s;
+}
+@keyframes prixVIP{
+    0%{
+        transform: translateX(600px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 15vw;
+    background-color:var(--back);
+    border: 2px solid var(--red_indice);
+    border-radius: 2rem;
+}
+
+.titre_milieu{
+    margin: 2vh 0;
+    padding: 0 24vw;
+    font-size: 1.5rem;
+}
+
+.a_remplir{
+    display: flex;
+    flex-direction: column;
+    margin: 0 3vw;
+}
+.type,.nombre,.numero,.nom,.email{
+    display: flex;
+    flex-direction: row;
+    color: var(--red_indice);
+    font-size: 1.3rem;
+    margin: 2vh 0;
+}
+
+.a_remplir input{
+    margin-left: 1vw;
+    margin-right: 10vw;
+    height: 1.5rem;
+    background-color: var(--back);
+    border: 1px solid var(--text_color1);
+    color: var(--text_color1);
+}
+
+.type input{
+    width: 37.5rem;
+} 
+.nombre input{
+    width: 35rem;
+}
+.numero input{
+    width: 37.1rem;
+}
+.nom input{
+    width: 44rem;
+}
+.email input{
+    width: 37.5rem;
+}
+
+.a_remplir hr{
+    background-color: var(--text_color1);
+    height: 1px;
+    border: none;
+}
+
+.validation{
+    margin-bottom: 2vh;
+}
+
+.validation button{
+    font-size: 1.3rem;
+    height: 3rem;
+    width: 7.5rem;
+    margin-left: 50rem;
+    color: var(--red_indice);
+    background-color: var(--text_color2);
+    border-radius: 1rem;
+    border: 1px solid var(--text_color1);
+}
+.validation button:hover{
+    background-color:rgb(239, 58, 58) ;
+    color: var(--text_color2);
+}
