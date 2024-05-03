@@ -170,6 +170,7 @@ button a{
     border-color: var(--red_indice);
 }
 
+
 main{
     background-color: var(--back);
 }
@@ -184,6 +185,16 @@ main{
     flex-direction:unset;
     margin-top: 15vh;
     justify-content: space-around;
+    animation-name: boxeL1;
+    animation-duration: 3s;
+}
+@keyframes boxeL1{
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 .course1,.course2,.course3,.course4,.course5{
@@ -192,13 +203,40 @@ main{
     width: 16rem;
     text-align: center;
     border-radius: 1rem;
+    transition: transform 0.5s
 }
+.course1:hover{
+    transform: scale(1.2);
+}
+.course2:hover{
+    transform: scale(1.2);
+}
+.course3:hover{
+    transform: scale(1.2);
+}
+.course4:hover{
+    transform: scale(1.2);
+}
+.course5:hover{
+    transform: scale(1.2);
+}
+
 .boxes_L2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 20vh;
     margin-bottom: 8vh;
+    animation-name: boxeL2;
+    animation-duration: 3s;
+}
+@keyframes boxeL2{
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 .boxes h1{
@@ -251,6 +289,7 @@ main{
 .marquez_texte{
     background-color:  rgba(88, 181, 243, 0.4);
     opacity: 0;
+    padding-top: 5vh;
     transition: opacity 0.5s ease;
 }
 .marquez_texte p{
@@ -269,6 +308,7 @@ main{
 .martin_texte{
     background-color: rgba(148, 14, 178, 0.4);
     opacity: 0;
+    padding: 2.4vh 0;
     transition: opacity 0.5s ease;
 }
 .martin_texte p{
@@ -286,6 +326,7 @@ main{
 .pecco_texte{
     background-color:  rgba(199, 3, 3, 0.2);
     opacity: 0;
+    padding-top: 5vh;
     transition: opacity 0.5s ease;
 }
 .pecco_texte p{
@@ -304,6 +345,8 @@ main{
 .fabio_texte{
     background-color:rgba(22, 35, 213, 0.3);
     opacity: 0;
+    padding-top: 4vh;
+    padding-bottom: 1vh;
     transition: opacity 0.5s ease;
 }
 .fabio_texte p{
@@ -321,6 +364,7 @@ main{
 .acosta_texte{
     background-color:rgba(231, 58, 35, 0.2);
     opacity: 0;
+    padding-top: 5vh;
     transition: opacity 0.5s ease;
 }
 .acosta_texte p{
