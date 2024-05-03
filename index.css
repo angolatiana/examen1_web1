@@ -84,6 +84,7 @@
 nav{
     position: sticky;
     top:0;
+    z-index: 1;
 }
 
 .milieu{   
@@ -229,30 +230,142 @@ main{
 }
 
 #pilotes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: white;
 }
 
 .ligne1{
     display: flex;
     flex-direction: row;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    justify-content: space-between;
+    
 }
+.marquez{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(photo/marc-marquez.jpeg);
+    background-size: cover;
+    border: 2px solid rgb(88, 181, 243);
+}
+.marquez_texte{
+    background-color:  rgba(88, 181, 243, 0.4);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.marquez_texte p{
+    text-align: center;
+}
+.marquez:hover .marquez_texte{
+    opacity: 1;
+}
+
+.martin{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(photo/Jorge-Martin.jpg);
+    background-size: cover;
+    margin-left: 3vw;
+    border: 2px solid rgb(148, 14, 178);
+}
+.martin_texte{
+    background-color: rgba(148, 14, 178, 0.4);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.martin_texte p{
+    text-align: center;
+}
+.martin:hover .martin_texte{
+    opacity: 1;
+}
+
+.pecco{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(photo/pecco.jpg);
+    background-size: cover;
+    border: 2px solid rgba(199, 3, 3, 0.571);
+}
+.pecco_texte{
+    background-color:  rgba(199, 3, 3, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.pecco_texte p{
+    text-align: center;
+}
+.pecco:hover .pecco_texte{
+    opacity: 1;
+}
+
+
+.fabio{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(photo/fabio-quartararo.jpg);
+    background-size: cover;
+    border: 2px solid rgba(22, 35, 213, 0.622);
+}
+.fabio_texte{
+    background-color:rgba(22, 35, 213, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.fabio_texte p{
+    text-align: center;
+}
+.fabio:hover .fabio_texte{
+    opacity: 1;
+}
+
+.Acosta{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(photo/acosta.jpg);
+    background-size: cover;
+    border: 2px solid rgb(231, 58, 35);
+}
+.acosta_texte{
+    background-color:rgba(231, 58, 35, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.acosta_texte p{
+    text-align: center;
+}
+.Acosta:hover .acosta_texte{
+    opacity: 1;
+}
+
 .ligne2{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15vh;
+    margin-right: 15vh;
 }
-
-#pilotes img{
-    width: 50%;
-    height: auto;
+.bio{
+    width: 15rem;
+    height: 7rem;
 }
-
-
-
-
-
-
+.bio p{
+    align-items: center;
+}
+.classement{
+    width: 15rem;
+    height: 7rem;
+}
+.description{
+    width: 31.5rem;
+    height: 12rem;  
+}
+.description p{
+    padding: 1vh;
+}
+.ligne3{
+    margin: 5vh 0;
+}
+.Acosta{
+    margin: 0 30.3rem;
+}
+.partie1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 #billets{
